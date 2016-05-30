@@ -21,3 +21,21 @@ console.log("I like ", currentBand);
 console.log("I like ", currentVeggie);
 
 }
+
+var divs = document.querySelector("divs")  //or (".container") or ("#asdf") THE FIRST ONE 
+var divs = document.querySelectorAll("divs")  //or (".container") or ("#asdf")  ALL OF THEM
+// these create an ARRAY not an HTMLCollection as is above...
+
+
+	
+var secret = prompt("What is the secret password?");
+var password = "sesame";
+var attempts = 0;
+
+while (secret !== password){
+  secret = prompt("What is the secret password?");
+  attempts += 1;
+}
+
+document.write("You know the secret password. Welcome.");
+document.write("You took " + attempts + " attempts to get the right password");
